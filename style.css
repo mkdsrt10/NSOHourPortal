@@ -54,3 +54,9 @@ form.example::after {
     clear: both;
     display: table;
 }
+div.upcmin {
+  background-color: #C4C4C4;
+  height: 450px;
+  padding: 5px;
+  margin: 20px;
+}
