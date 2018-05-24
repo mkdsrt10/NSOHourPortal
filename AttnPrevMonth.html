@@ -17,15 +17,89 @@
         </div>
       </div>
     </nav>
-
     <div class="container">
       <div><h2 id="session-user">Day-wise NSO Hours</h2></div>
       <br>
-      <form class="example" action="action_page.php">
-        <input type="text" placeholder="Month.." name="search">
-        <button type="submit">Submit</button>
-      </form>
+      <form class="monthName" action="#">
+          <div class="dropdown">
+              <button class="button">Month..</button>
+              <div class="dropdown-content">
+                <a onclick="dispalyMonth(1)" id="1"><b>January</b></a>
+                <a onclick="dispalyMonth(2)" id="2"><b>February</b></a>
+                <a onclick="dispalyMonth(3)" id="3"><b>March</b></a>
+                <a onclick="dispalyMonth(4)" id="4"><b>April</b></a>
+                <a onclick="dispalyMonth(5)" id="5"><b>May</b></a>
+                <a onclick="dispalyMonth(6)" id="6"><b>June</b></a>
+                <a onclick="dispalyMonth(7)" id="7"><b>July</b></a>
+                <a onclick="dispalyMonth(8)" id="8"><b>August</b></a>
+                <a onclick="dispalyMonth(9)" id="9"><b>September</b></a>
+                <a onclick="dispalyMonth(10)" id="10"><b>October</b></a>
+                <a onclick="dispalyMonth(11)" id="11"><b>November</b></a>
+                <a onclick="dispalyMonth(12)" id="12"><b>December</b></a>
+              </div>
+            </div>
+       </form>
+       <br><br><br><br>
+       <div class="row one">
+         <h2 style="padding-left: 25px" id="MonthName">Month</h2>
+       </div>
+       <div class="two" style="background-color: #C4C4C4;">
+           <table>
+               <tr>
+                 <td>1</td>
+                 <td>2</td>
+                 <td>3</td>
+                 <td>4</td>
+                 <td>5</td>
+               </tr>
+               <tr>
+                   <td>6</td>
+                   <td>7</td>
+                   <td>8</td>
+                   <td>9</td>
+                   <td>10</td>
+               </tr>
+               <tr>
+                   <td>11</td>
+                   <td>12</td>
+                   <td>13</td>
+                   <td>14</td>
+                   <td>15</td>
+               </tr>
+               <tr>
+                   <td>16</td>
+                   <td>17</td>
+                   <td>18</td>
+                   <td>19</td>
+                   <td>20</td>
+               </tr>
+               <tr>
+                   <td>21</td>
+                   <td>22</td>
+                   <td>23</td>
+                   <td>24</td>
+                   <td>25</td>
+               </tr>
+               <tr>
+                   <td>26</td>
+                   <td>27</td>
+                   <td>28</td>
+                   <td>29</td>
+                   <td>30</td>
+               </tr>
+               <tr>
+                   <td>31</td>
+               </tr>
+             </table>
+       </div>
     </div>
+
+
+    <script>
+      function dispalyMonth(id){
+        document.getElementById("MonthName").innerHTML = document.getElementById(id).text;
+      }
+    </script>
 
 
   </body>
