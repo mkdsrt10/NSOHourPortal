@@ -13,6 +13,32 @@
   font-size: 20px;
   text-align: left;
   }
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.round {
+    border-radius: 50%;
+}
+
   </style>
   </head>
   <body>
@@ -20,6 +46,8 @@
       <div class="container-fluid" style="background-color: darkblue">
         <div class="navbar-header">
           <a class="navbar-brand " href="#" style="font-size: 30px; color: #FFFFFF; font-family: Roboto">BSA,IIT Delhi</a>
+        <img src="https://www.glassdoor.co.in/Benefits/IIT-Delhi-India-Benefits-EI_IE366506.0,9_IL.10,15_IN115.htm" style="height: 40px;width: 50px">
+        
         </div>
       </div>
     </nav>
@@ -29,6 +57,7 @@
       <form class="monthName" action="#">
           <div class="dropdown">
               <button class="button" style="background-color: darkblue">Month..</button>
+              
               <div class="dropdown-content">
                 <a onclick="dispalyMonth(1)" id="1"><b>January</b></a>
                 <a onclick="dispalyMonth(2)" id="2"><b>February</b></a>
@@ -48,6 +77,8 @@
        <br><br><br><br>
        <div class="row one" style="background-color: darkblue">
          <h2 style="padding-left: 25px" id="MonthName">Month</h2>
+         <emsp><emsp>         <a href="#" class="previous round">&#8249;</a>
+<a href="#" class="next round">&#8250;</a>
        </div>
        <div class="two" style="background-color: antiquewhite">
            <table>
