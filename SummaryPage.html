@@ -69,8 +69,51 @@
 
     <br>
     <div class="container">
-      <button type="button" class="btn button" id="complaint">Complain For Missing Hours</button>
+      <button type="button"  class="btn button" data-toggle="modal" data-target="#myModal" id="complaint">Complain For Missing Hours</button>
     </div>
+
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">NSO  Hour Complaint Page</h4>
+          </div>
+          <div class="modal-body">
+            <form action="/action_page.php">
+                &ensp;&ensp;&ensp;First name:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp;        Last Name:<br>
+                &ensp;&ensp;&ensp;<input type="text" name="firstname" placeholder="Enter...">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                <input type="text" name="lastname" placeholder="Enter...">
+                <br><br>
+                &ensp;&ensp;&ensp;Complaint Type:
+                &ensp;&ensp;&ensp;<input type="text" name="complainttype" placeholder="Enter...">
+                <br><br>
+                &ensp;&ensp;&ensp;<Date:>Date:
+                &ensp;&ensp;&ensp;<input type="text" name="Date" placeholder="Enter...">
+                <br><br>
+                &ensp;&ensp;&ensp;Event:
+                &ensp;&ensp;&ensp;<input type="text" name="Event" placeholder="Enter...">
+                <br><br>
+                &ensp;&ensp;&ensp;Entry No:
+                &ensp;&ensp;&ensp;<input type="text" name="entryno." placeholder="Enter...">
+                <br><br>
+                &ensp;&ensp;&ensp;Issues(in detail):
+                &ensp;&ensp;&ensp;<textarea rows="4" cols="50" name="comment" placeholder="Enter Text Here..."></textarea>
+                </textarea>
+                <!-- &ensp;&ensp;&ensp;<input type="submit" value="Submit"> -->
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn button" data-dismiss="modal">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
   </body>
 </html>
